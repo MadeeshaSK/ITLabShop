@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Play", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.outer {
+    width: 100%;
+    height: 90vh;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Other */
+
+.back-to-top-outer {
+    width: 50px;
+    height: 50px;
+    background-color: #FF500A;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.back-to-top-outer:hover {
+    transform: scale(1.2);
+    transition: all 0.1s ease-in-out;
+    
+}
+.back-to-top-outer a {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+.fa-solid {
+    font-size: 18px;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #C1C0BE;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #FF500A;
+    border-radius: 10px;
+}
+
+/* Other */
+
+/* Header Section  */
+
+.navbar-brand img {
+    height: 50px;
+}
+/* .header-outer {
+    position: sticky;
+    top: 0;
+} 
+//if we want to stick header top of the view port when scrolling    
+*/
+
+
+/* Header Section  */
+
+/* Home Section */
+
+.home-outer {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column; 
+}
+.img-container {
+    width: 100%;
+    height: 90%;
+    background-image: url(https://img.freepik.com/free-photo/top-view-notebook-keyboard-wooden-desk_23-2148415045.jpg?t=st=1731854793~exp=1731858393~hmac=2e1b53070a5f408edc5d6a880359dd5261713f1782215a4033c681b21c92ee45&w=996);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.img-container::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    background-size: inherit;
+    filter: blur(5px); 
+    z-index: 1; 
+}
+.text-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 25%;
+    position: relative;
+    z-index: 2;
+}
+
+.title-text {
+    text-align: center;
+    width: 35%;
+    padding: 2px 2px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    background: linear-gradient(to left , black, #FF500A);
+
+}
+.heading-text {
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    line-height: 50px;
+}
+.container {
+    width: 60% !important;
+}
+.widgets-container {
+    margin-top: -120px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 3;
+}
+.widget-outer {
+    height: 300px;
+}
+.widgets-inner {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FF500A;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 13px 18px -2px rgba(255,80,10,0.36);
+    -webkit-box-shadow: 10px 13px 18px -2px rgba(255,80,10,0.36);
+    -moz-box-shadow: 10px 13px 18px -2px rgba(255,80,10,0.36);
+    
+}
+.widgets-inner-top {
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widgets-inner-bottom {
+    width: 100%;
+    flex: 1;
+    background-color:transparent;
+}
+.widget-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #FF500A;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widgets-inner-bottom-header {
+    text-align: center;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+.widgets-inner-bottom-para {
+    text-align: center;
+    margin: 10px 15px;
+    color: #7f8c8d;
+    font-size: small;  
+}
+.widget-icon svg {
+    width: 70%;
+    height: 70%;
+}
+
+/* Home Section */
+
+/* Services Section */
+
+.services-outer {
+    min-height: 650px;
+    background-image: url(https://img.freepik.com/free-photo/top-view-desk-concept-with-copy-space_23-2148223124.jpg?t=st=1731963318~exp=1731966918~hmac=5b7beef8eaba7b1e0e991e79f2f1e71f7837234d32092ddc8e996109ec049ece&w=996);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.service-container {
+    min-height: 650px;
+    width: 70% !important;
+}
+.service-right-side {
+    min-height: 650px;
+}
+.right-top {
+    width: 100%;
+    min-height: 350px;
+    background-color: F6F5F3;
+}
+.right-bottom {
+    width: 100%;
+    min-height: 300px;
+    background-color: F6F5F3;
+}
+.right-top-inner {
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;  
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-bottom-inner {
+    width: 100%;
+    height: 80%; 
+    margin-top: 20px; 
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-top-inner-description {
+    margin: 20px 10% 0 5%;
+    text-align: justify;
+    font-size: small;
+}
+.right-top-inner-header {
+    margin: 20px 5% 0 5%;
+}
+.right-top-inner-title {
+    margin: 20px 5% 0 5%;
+}
+.right-bottom-inner-description {
+    margin: 20px 10% 15% 5%;
+    text-align: justify;
+    font-size: small;
+    
+}
+.right-bottom-inner-header {
+    margin: 20px 5% 0 5%;
+    font-size: medium;
+}
+.service-grid-outer {
+    width: 100%;
+    height: 300px;
+    background-color: #1F1F1F;
+    display: flex;
+}
+.service-grid-inner {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid1 {
+    background-image: url(https://img.freepik.com/free-photo/ui-ux-representations-with-laptop_23-2150201871.jpg?t=st=1732007089~exp=1732010689~hmac=f9f31b0c4fd5e69e05463ab3148a94916842af5ea21ff90fb724a5212622f2b5&w=996);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.grid3 {
+    background-image: url(https://img.freepik.com/premium-photo/abstract-shining-blue-celebrate-background-design_1128603-37658.jpg?w=996);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.service-grid-inner-title {
+    color: #FF500A;
+    font-size: medium;
+    margin-left: 10px;
+}
+.service-grid-inner-header {
+    color: white;
+    margin-left: 10px;
+}
+.service-grid-inner-description {
+    color: #7f8c8d;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+.service-grid-inner-link {
+    color:#FF500A ;
+    font-size: small;
+    margin-left: 10px;
+}
+
+/* Services Section */
+
+/* Products Section */
+
+.products-outer {
+    width: 100%;
+    height: auto;
+    /* height auto min-hight are better than fixed size */
+}
+.product-title {
+    color: #FF500A;
+    text-align: center;
+    padding-top: 50px;
+}
+.product-header {
+    color: black;
+    text-align: center;
+}
+.product-inner {
+    width: 100%;
+    height: 250px;
+}
+.product-wrapper {
+    margin-bottom: 25px;
+}
+.product-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.feture-title {
+    color: #FF500A;
+}
+.feature-outer ol {
+    padding: 0;
+    margin: 15px;
+}
+.feature-outer ol li {
+    font-style: italic;
+}
+.feature-img img{
+    width: 450px;
+}
+/* .feature-wrapper {
+    border: 1px solid red;//helped for align
+} */
+.feature-outer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Products Section */
+
+/* About Us Section */
+
+.aboutus-outer {
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+.aboutus-outer img {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+}
+.dark-shadow-outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(19, 15, 64,0.6);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-content {
+    width: 50%;
+    height: 80%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-title {
+    color: white;
+    font-size: xx-large;
+}
+.about-para {
+    color: white;
+    font-size: small;
+    margin: 20px 50px;
+    text-align: justify;
+}
+
+/* About Us Section */
+
+/* Solutions Section */
+
+.solutions-outer {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    background-image: url(https://img.freepik.com/free-photo/flat-lay-desk-concept-with-copy-space_23-2148459651.jpg?t=st=1732038503~exp=1732042103~hmac=4c601b811db7efde208ab9e19dc69627fec40fd925a8c3aab588b89a62ea2351&w=1060);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.solution-inner-tittle {
+    color: #FF500A;
+    margin-top: 50px;
+    font-size: medium;
+}
+.solution-inner-head {
+    color: white;
+}
+.solution-data-box {
+    margin-top: 50px;
+}
+.s-para {
+    color: #C1C0BE;
+    font-size: small;
+    font-style: italic;
+}
+.s-tittle {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+/* Solutions Section */
+
+/* Contact Us Section */
+
+.contact-outer {
+    width: 100%;
+    height: auto;
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.contact-inner {
+    width: 60%;
+    height: 80%;
+    display: flex;
+}
+.contact-inner-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
+.contact-inner-right {
+    width: 50%;
+    height: 100%;
+}
+.contact-header {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contact-title {
+    color: white;
+    font-size: small;
+}
+.contact-para1 {
+    color: white;
+    font-size: small;
+}
+.contact-para2 {
+    color: white;
+    font-size: small;
+    color: #FF500A;
+}
+
+/* Contact Us Section */
+
+/* Footer Section */
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #7f8c8d;
+    padding: 70px 0;
+}
+.footer-title, .footer-para {
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+.copyright {
+    text-align: center;
+    padding-top: 50px;
+}
+.copyright a {
+    color: #FF500A;
+}
+
+/* Footer Section */
+
+
+
+
+/* Light Theme
+@media (prefers-color-scheme: light) {
+    
+}
+
+Dark Theme
+@media (prefers-color-scheme: dark) {
+   
+}  */
+/* Small Mobile Devices (Portrait, width up to 480px) */
+@media (max-width: 480px) {
+    /* Styles for small mobile devices */
+    .text-container {
+        padding: 0 5%;
+    }
+    .heading-text {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .title-text {
+        font-size: 0.8rem;
+    }
+    .widgets-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .widget-outer {
+        flex: 1 1 100%;
+    }
+    .img-container {
+        height: 50%; /* Adjust image height for smaller devices */
+    }
+    .container {
+        width: 90% !important;
+}
+
+/* Medium Mobile Devices (Portrait, width 481px to 767px) */
+@media (max-width: 767px) {
+    /* Styles for medium-sized mobile devices */
+    .heading-text {
+        font-size: 2rem;
+    }
+    .title-text {
+        font-size: 0.9rem;
+    }
+    .widgets-container {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+    .widget-outer {
+        flex: 1 1 calc(50% - 20px); /* Two widgets per row with some spacing */
+        max-width: 100%;
+    }
+    .img-container {
+        height: 60%; /* Adjust image height for medium devices */
+    }
+}
+
+@media only screen and (max-width:992px){
+    .contact-outer {
+        height: 1100px;
+    }
+    .contact-inner-left {
+        height: 550px;;
+    }
+    .contact-inner-right {
+        height: 550px;
+        
+    }
+    .contact-inner {
+        display: block;
+    }
+}
